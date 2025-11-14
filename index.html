@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MTSB Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h1>Minda Siswa</h1>
+        <p>Jawab semua 5 soalan untuk dapatkan klu ke checkpoint seterusnya!</p>
+        
+        <div class="question-group">
+            <label for="q1">1. Apakah warna rasmi bagi UNISEL?</label>
+            <input type="text" id="q1" placeholder="Jawapan anda...">
+            <div class="feedback" id="q1-feedback" aria-live="polite"></div>
+        </div>
+
+        <div class="question-group">
+            <label for="q2">2. Apakah tema MTSB pada tahun ini?</label>
+            <input type="text" id="q2" placeholder="Jawapan anda...">
+            <div class="feedback" id="q2-feedback" aria-live="polite"></div>
+        </div>
+
+        <div class="question-group">
+            <label for="q3">3. Apakah nama Timbalan Naib Canselor di UNISEL?</label>
+            <input type="text" id="q3" placeholder="Jawapan anda...">
+            <div class="feedback" id="q3-feedback" aria-live="polite"></div>
+        </div>
+        
+        <div class="question-group">
+            <label for="q4">4. Berapakah kesuluruhan fakulti di UNISEL?</label>
+            <input type="text" id="q4" placeholder="Kampus ...">
+            <div class="feedback" id="q4-feedback" aria-live="polite"></div>
+        </div>
+        
+        <div class="question-group">
+            <label for="q5">5. Apakah nama ketua fasilitator pada intake NOV 2025 UNISEL?</label>
+            <input type="text" id="q5" placeholder="Jawapan anda...">
+            <div class="feedback" id="q5-feedback" aria-live="polite"></div>
+        </div>
+
+        <button type="button" onclick="semakCheckpoint()">Semak Jawapan</button>
+
+        <!-- Butang klu, sembunyi sehingga semua jawapan betul -->
+        <button id="clueButton" type="button" style="display:none; margin-top:10px;" onclick="tunjukKlu()">Buka Petunjuk</button>
+
+        <div id="checkpointMessage"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

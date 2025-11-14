@@ -1,0 +1,120 @@
+/* Gaya badan dan kotak kuiz (sama macam tadi) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.quiz-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+    width: 100%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #005A9C;
+}
+
+/* BARU: Gaya untuk kumpulan soalan */
+.question-group {
+    margin-bottom: 20px;
+}
+
+.question-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* BARU: Gaya untuk input teks (responsif) */
+input[type="text"] {
+    width: 100%; /* Ambil lebar penuh */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Pastikan padding tidak 'overflow' */
+    font-size: 16px;
+}
+
+/* Gaya untuk input betul/salah */
+input.correct {
+    border-color: #2e7d32; /* hijau */
+    box-shadow: 0 0 0 3px rgba(46,125,50,0.06);
+}
+
+input.incorrect {
+    border-color: #c62828; /* merah */
+    box-shadow: 0 0 0 3px rgba(198,40,40,0.06);
+}
+
+/* Teks feedback kecil di bawah setiap input */
+.feedback {
+    margin-top: 6px;
+    font-size: 0.95em;
+}
+
+.correct-text {
+    color: #2e7d32;
+    font-weight: bold;
+}
+
+.incorrect-text {
+    color: #c62828;
+    font-weight: bold;
+}
+
+/* Gaya Butang (sama macam tadi) */
+button {
+    background-color: #E0A020;
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #c48a1b;
+}
+
+/* Butang klu ikut gaya butang utama tetapi warna berlainan */
+#clueButton {
+    background-color: #2e7d32;
+}
+
+#clueButton:hover {
+    background-color: #276428;
+}
+
+/* BARU: Gaya untuk mesej checkpoint */
+#checkpointMessage {
+    display: none; /* Sembunyikan dulu */
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+/* Kelas ini akan ditambah oleh JavaScript */
+.msg-error {
+    background-color: #ffebee;
+    color: #c62828;
+    border: 1px solid #c62828;
+}
+
+.msg-success {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border: 1px solid #2e7d32;
+}
