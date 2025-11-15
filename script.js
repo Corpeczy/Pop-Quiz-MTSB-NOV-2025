@@ -7,7 +7,7 @@ function semakCheckpoint() {
         q2: "teknologi",
         q3: "prof. madya dr. hamdan bin dato' mohd salleh",
         q4: "5",
-        q5: "elvina" // Maskot UNISEL
+        q5: "elveena" // Maskot UNISEL
     };
 
     // 2. Dapatkan SEMUA jawapan pelajar
@@ -68,4 +68,5 @@ function tunjukKlu() {
     messageContainer.style.display = 'block';
     // Optional: disable clue button after shown
     document.getElementById('clueButton').disabled = true;
+
 }
